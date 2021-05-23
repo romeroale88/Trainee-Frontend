@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./assets/play.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Video</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="video">
+            <img src="./assets/video.png" alt="" width="80%">
+            <img src="./assets//play.png" alt="" class="btn-play" onclick="playVideo('./assets/record_player_011.mp4')">
+        </div>
+        <div class="descripcion">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, quos!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ad eos blanditiis minima pariatur! Fuga atque beatae quibusdam voluptate? Quis quas ab labore provident et ipsam minus. Officiis possimus praesentium hic, inventore quod nisi tempore, adipisci mollitia vero repudiandae eius!</p>
+        </div>
+    </div>
+    <div class="rep-video" id="video-rep">
+        <video width="100%" controls autoplay id="video">
+            <source src="./assets/record_player_011.mp4" type="video/mp4">
+        </video>
+        <img src="./assets/close.png" alt="" class="btn-close" onclick="stopVideo()">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
